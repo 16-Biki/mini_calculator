@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculator">
+        <h1>
+            CALCULATOR
+        </h1>
+        <input id="display" readonly>
+        <div class="calculator-keys">
+            <button onclick="showdisplay('7')">7</button>
+            <button onclick="showdisplay('8')" >8</button>
+            <button onclick="showdisplay('9')">9</button>
+            <button class="operator" onclick="showdisplay('+')">+</button><br>
+            <button onclick="showdisplay('4')">4</button>
+            <button onclick="showdisplay('5')">5</button>
+            <button onclick="showdisplay('6')">6</button>
+            <button class="operator"  onclick="showdisplay('-')">-</button><br>
+            <button onclick="showdisplay('1')">1</button>
+            <button onclick="showdisplay('2')">2</button>
+            <button onclick="showdisplay('3')">3</button>
+            <button class="operator"  onclick="showdisplay('*')">*</button><br>
+            <button onclick="showdisplay('0')">0</button>
+            <button onclick="showdisplay('.')">.</button>
+            <button onclick="deletelast()">Del</button>
+            <button class="operator"  onclick="showdisplay('/')">/</button><br>
+            <button class="all-clear" onclick="cleardisplay()">AC</button>
+            <button class="equal-sign"onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
